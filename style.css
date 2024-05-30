@@ -232,6 +232,7 @@ body {
 .blink-animation {
     animation: blink 1s ease-in-out 1;
 }
+
 @keyframes heartbeat {
     0%, 100% {
         transform: translate(-50%, -50%) scale(1);
