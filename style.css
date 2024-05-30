@@ -210,6 +210,15 @@ body {
     box-shadow: 0 5px 0 10px rgb(226, 124, 76) inset;
     border-radius: 50%;
 }
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #eee530, 0 0 40px #eee530, 0 0 50px #eee530, 0 0 60px #eee530, 0 0 70px #eee530;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
 
 /* Animation */
 @keyframes blink {
