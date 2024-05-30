@@ -232,3 +232,23 @@ body {
 .blink-animation {
     animation: blink 1s ease-in-out 1;
 }
+@keyframes heartbeat {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;  /* Tamaño aumentado */
+    height: 90px;  /* Tamaño aumentado */
+    background-color: red;
+    transform: translate(-50%, -50%);
+    clip-path: path('M50 15C61.93 3.07 86.36 7.14 91.23 27.14C95.7 44.9 78.63 57.43 50 85C21.37 57.43 4.3 44.9 8.77 27.14C13.64 7.14 38.07 3.07 50 15Z');
+    animation: heartbeat 1s infinite;
+}
